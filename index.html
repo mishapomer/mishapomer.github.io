@@ -3,7 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Навыки Будущего — Онлайн-лаборатория для подростков 14-18 лет</title>
+    <title>Soft Skills для подростков 14-18 лет — онлайн-курсы навыков будущего</title>
+    <meta name="description" content="Онлайн-лаборатория soft skills для подростков 14–18 лет. Курсы коммуникации, креативности, критического мышления и командной работы. Практикоориентированное обучение.">
+    <meta name="keywords" content="курсы для детей, soft skills для подростков, онлайн-курсы для школьников, навыки будущего для подростков, навыки 21 века, развитие подростков, коммуникация для подростков, креативность для детей, командная работа подростков, критическое мышление школьников, онлайн обучение подростков, курсы для подростков онлайн, нейросети для подростков, развитие soft skills">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Навыки Будущего">
+    <link rel="canonical" href="https://navyki-budushchego.ru/">
+    <meta name="theme-color" content="#7C3AED">
+
+    <!-- Open Graph / Соцсети -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://navyki-budushchego.ru/">
+    <meta property="og:title" content="Soft Skills для подростков 14-18 лет — онлайн-курсы навыков будущего">
+    <meta property="og:description" content="Онлайн-лаборатория soft skills для подростков 14–18 лет. Практикоориентированные курсы коммуникации, креативности, командной работы и нейросетей.">
+    <meta property="og:image" content="https://navyki-budushchego.ru/images/og-cover.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Навыки Будущего">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Soft Skills для подростков 14-18 лет — онлайн-курсы навыков будущего">
+    <meta name="twitter:description" content="Онлайн-лаборатория soft skills для подростков 14–18 лет. Практикоориентированные курсы коммуникации, креативности, командной работы и нейросетей.">
+    <meta name="twitter:image" content="https://navyki-budushchego.ru/images/og-cover.jpg">
+
+    <!-- Яндекс вебмастер -->
+    <!-- <meta name="yandex-verification" content="ВАШ_КОД_ЯНДЕКСА"> -->
+    <!-- Google Search Console -->
+    <!-- <meta name="google-site-verification" content="ВАШ_КОД_GOOGLE"> -->
+
+    <!-- Структурированные данные Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Навыки Будущего",
+        "description": "Онлайн-лаборатория soft skills для подростков 14–18 лет. Практикоориентированное обучение коммуникации, креативности, критическому мышлению и командной работе.",
+        "url": "https://navyki-budushchego.ru/",
+        "telephone": "+79309937335",
+        "areaServed": "RU",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "suggestedMinAge": 14,
+            "suggestedMaxAge": 18
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Курсы для подростков",
+            "itemListElement": [
+                {
+                    "@type": "Course",
+                    "name": "4К: навыки будущего",
+                    "description": "Интенсив по коммуникации, креативности, критическому мышлению и командной работе для подростков 14–18 лет",
+                    "provider": { "@type": "Organization", "name": "Навыки Будущего" },
+                    "offers": { "@type": "Offer", "price": "9900", "priceCurrency": "RUB" }
+                },
+                {
+                    "@type": "Course",
+                    "name": "Нейросети для подростков",
+                    "description": "Мастер-класс по осознанному использованию нейросетей для подростков 14–18 лет",
+                    "provider": { "@type": "Organization", "name": "Навыки Будущего" },
+                    "offers": { "@type": "Offer", "price": "4490", "priceCurrency": "RUB" }
+                }
+            ]
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1622,7 +1688,7 @@
             text-align: center;
             background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 50%, #EC4899 100%);
             border-radius: 40px;
-            padding: 5rem 4rem;
+            padding: 5rem 4rem 3.5rem;
             color: var(--color-white);
             box-shadow: 
                 0 30px 80px rgba(124, 58, 237, 0.35),
@@ -1856,8 +1922,13 @@
             line-height: 1.55;
             text-align: center;
         }
-        .form-legal a { color: rgba(255,255,255,0.85); text-decoration: underline; }
-        .form-legal a:hover { color: #fff; }
+        .contact-section .form-legal {
+            font-size: 0.83rem;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 0;
+        }
+        .form-legal a { color: rgba(255,255,255,0.75); text-decoration: underline; }
+        .form-legal a:hover { color: rgba(255,255,255,0.95); }
 
         .contact-method-group {
             display: flex;
@@ -1905,17 +1976,156 @@
             padding: 3rem 0 2rem;
             margin-top: 5rem;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
             text-align: center;
         }
-        
+
         .footer-content p {
             color: rgba(255, 255, 255, 0.7);
             margin: 0.5rem 0;
+        }
+
+        .footer-contacts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .footer-contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.97rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer-contact-link:hover {
+            color: #fff;
+        }
+
+        .footer-contact-link svg {
+            flex-shrink: 0;
+        }
+
+        .footer-contact-link img {
+            flex-shrink: 0;
+            display: block;
+        }
+
+        .footer-legal {
+            margin-top: 1.2rem;
+        }
+
+        .footer-legal a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: underline;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-legal a:hover {
+            color: #fff;
+        }
+
+        /* ===== Модальное окно успешной отправки ===== */
+        .success-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 11, 46, 0.6);
+            backdrop-filter: blur(6px);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .success-modal-overlay.active {
+            display: flex;
+        }
+
+        .success-modal {
+            background: #fff;
+            border-radius: 24px;
+            padding: 3rem 2.5rem 2.5rem;
+            max-width: 460px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 32px 80px rgba(124, 58, 237, 0.22), 0 8px 24px rgba(0,0,0,0.12);
+            animation: modal-pop 0.35s cubic-bezier(0.34,1.56,0.64,1) both;
+        }
+
+        @keyframes modal-pop {
+            from { opacity: 0; transform: scale(0.85) translateY(20px); }
+            to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .success-modal-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7C3AED, #3B82F6, #EC4899);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .success-modal h3 {
+            font-family: var(--font-family-display);
+            font-size: 1.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .success-modal p {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .success-modal-btn {
+            display: inline-block;
+            padding: 0.85rem 2.5rem;
+            background: linear-gradient(135deg, #7C3AED, #3B82F6);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-family: var(--font-family-display);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.35);
+        }
+
+        .success-modal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(124, 58, 237, 0.45);
+        }
+
+        .success-modal-confetti {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
         }
         
         /* Мобильная адаптация */
@@ -2629,7 +2839,18 @@
 .pv-subtitle { text-align: center; color: var(--color-text-secondary); font-size: 1.1rem; margin-bottom: 3.5rem; }
 
 .pv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-@media (max-width: 720px) { .pv-grid { grid-template-columns: 1fr; } }
+.pv-grid > .pv-detail-panel { grid-column: 1 / -1; }
+/* Desktop: cards side-by-side, panel below both */
+.pv-grid > .pv-card:first-child { order: 1; }
+.pv-grid > .pv-detail-panel { order: 3; }
+.pv-grid > .pv-card--ai { order: 2; }
+@media (max-width: 720px) {
+    .pv-grid { grid-template-columns: 1fr; }
+    /* Mobile: card-4k → panel → card-ai */
+    .pv-grid > .pv-card:first-child { order: 1; }
+    .pv-grid > .pv-detail-panel { order: 2; }
+    .pv-grid > .pv-card--ai { order: 3; }
+}
 
 .pv-card { position: relative; border-radius: 28px; padding: 2.25rem 2rem 2rem; background: rgba(255,255,255,0.72); backdrop-filter: blur(20px) saturate(160%); border: 1.5px solid rgba(124,58,237,0.13); box-shadow: 0 16px 48px rgba(26,11,46,0.09), 0 0 0 1px rgba(255,255,255,0.4) inset; display: flex; flex-direction: column; gap: 0.9rem; transition: transform 0.25s ease, box-shadow 0.25s ease; cursor: pointer; }
 .pv-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(124,58,237,0.14), 0 0 0 1px rgba(255,255,255,0.5) inset; }
@@ -2750,7 +2971,9 @@
             50%       { transform: translateX(-50%) translateY(-8px); }
         }
 
-        M0% 150% !important;
+        .format-photo-card {
+            background: linear-gradient(135deg, rgba(124,58,237,0.18), rgba(59,130,246,0.15), rgba(236,72,153,0.12), rgba(124,58,237,0.18)) !important;
+            background-size: 300% 300% !important;
             animation: fpc-aurora 7s ease-in-out infinite alternate !important;
         }
 
@@ -2805,6 +3028,411 @@
             }
         }
 
+        /* ============================================================
+           MOBILE ADAPTATION v2 — COMPREHENSIVE
+           Covers: iPhone SE (375), iPhone 14 (390), Android (360–414),
+                   tablet portrait (768–1024)
+           ============================================================ */
+
+        /* Scroll offset for fixed header on all screens */
+        html {
+            scroll-padding-top: 130px;
+        }
+
+        /* ── PHONE: ≤ 767px ── */
+        @media (max-width: 767px) {
+
+            /* Top marquee bar — thinner & smaller text on mobile */
+            .top-marquee-bar {
+                padding: 0.42rem 0;
+            }
+            .top-marquee-bar .marquee-text {
+                font-size: 0.72rem;
+                padding-right: 1.5rem;
+            }
+
+            /* Nav: adjust position for shorter top bar (~32px) */
+            nav {
+                top: 32px;
+            }
+            .mobile-menu-close {
+                top: calc(32px + 0.65rem);
+            }
+            .nav-content {
+                padding: 0.65rem 1.25rem 0.55rem;
+            }
+            .burger-menu {
+                width: 44px;
+                height: 44px;
+                border-radius: 12px;
+            }
+
+            /* ── HERO: fix content hidden behind fixed nav ── */
+            /* Desktop: hero padding-top 130px. Mobile resets to 0 — broken!
+               Fix: restore offset that clears topbar (32px) + nav (~68px) */
+            .hero {
+                padding-top: 108px;
+                min-height: 100vh;   /* fallback for older browsers */
+                min-height: 100svh;  /* dynamic vh — no address-bar overhang on iOS/Android */
+            }
+            .hero-content {
+                grid-template-columns: 1fr;
+                padding: 1.5rem 1.25rem 2.5rem;
+                gap: 0;
+            }
+            /* Remove double-padding: hero-content AND hero-text both had 3rem */
+            .hero-text {
+                padding: 0;
+                gap: 1.25rem;
+            }
+            .hero-title {
+                font-size: clamp(1.75rem, 9vw, 2.75rem);
+            }
+            .hero-subtitle {
+                font-size: clamp(1.1rem, 5.5vw, 1.65rem);
+                margin-bottom: 1.5rem;
+            }
+            .hero-cta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+                padding: 0.9rem 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            /* ── HERO IMAGES: show above text on mobile ── */
+            /* Grid order: images (-1) appears before hero-text (0) */
+            .hero-images {
+                display: flex;
+                flex-direction: row;
+                height: 170px;
+                overflow: visible;
+                order: -1;
+                margin-bottom: 0.75rem;
+                padding: 0 1rem;
+                justify-content: center;
+                gap: 0;
+            }
+            /* Override absolute positioning — make them flow in flexbox */
+            .hero-image-wrapper {
+                position: relative;
+                top: auto;
+                left: auto;
+                bottom: auto;
+                right: auto;
+                width: 44%;
+                max-width: 190px;
+                height: 100%;
+                flex-shrink: 0;
+                border-width: 3px;
+            }
+            .hero-image-wrapper:first-child {
+                transform: rotate(-4deg);
+                z-index: 1;
+                margin-right: -30px;
+            }
+            .hero-image-wrapper:last-child {
+                transform: rotate(3deg);
+                margin-top: 12px;
+                z-index: 2;
+                margin-left: -30px;
+            }
+
+            /* Prevent hero overflow from clipping images */
+            .hero {
+                overflow: visible;
+            }
+            .hero-content {
+                overflow: visible;
+            }
+
+            /* ── SKILLS MARQUEE: smaller tags so all skills are visible ── */
+            .skill-tag {
+                font-size: 0.72rem;
+                padding: 0.45rem 1.05rem;
+            }
+            .skills-marquee-container {
+                padding: 0.6rem 0;
+            }
+            /* Narrow fade masks on mobile */
+            .skills-marquee-container::before,
+            .skills-marquee-container::after {
+                width: 36px;
+            }
+
+            /* ── SKILLS SECTION: disable 100vw overflow trick on mobile ──
+               The left/margin-left/-50vw pattern causes horizontal bleed
+               on iOS when any element exceeds viewport width.             */
+            .skills-section {
+                width: 100%;
+                left: auto;
+                right: auto;
+                margin-left: 0;
+                margin-right: 0;
+                position: relative;
+                overflow: hidden;
+            }
+
+            /* ── GENERAL LAYOUT ── */
+            .container {
+                padding: 0 1.25rem;
+            }
+            section {
+                padding: 2rem 0;
+            }
+            h2 {
+                font-size: clamp(1.6rem, 8vw, 2.5rem);
+            }
+            h3 {
+                font-size: clamp(1.3rem, 6vw, 2rem);
+            }
+            p {
+                font-size: clamp(0.9rem, 3.5vw, 1rem);
+            }
+
+            /* ── ABOUT ── */
+            #about .about-split {
+                gap: 2rem;
+            }
+            #about .mission-title {
+                font-size: clamp(1.7rem, 8vw, 2.5rem);
+                margin-bottom: 1.25rem;
+            }
+            #about .mission-text {
+                font-size: clamp(0.95rem, 4.5vw, 1.15rem);
+            }
+            /* values-list stays single-column (handled by ≤980px rule) */
+
+            /* ── SKILLS: WHERE CARDS ── */
+            #skills .skills-header {
+                padding: 0 1.25rem 1.25rem;
+            }
+            #skills .where-title {
+                margin: 2.5rem 0 1.5rem;
+                font-size: clamp(1.5rem, 7vw, 2.2rem);
+            }
+            #skills .where-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            #skills .where-card {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+                border-radius: 22px;
+            }
+            #skills .where-media img {
+                height: 190px;
+                width: 100%;
+            }
+
+            /* ── PRODUCT HERO ── */
+            .product-hero {
+                border-radius: 20px;
+                padding: 2rem 1.5rem;
+            }
+
+            /* ── CONTACT SECTION ── */
+            .contact-section {
+                border-radius: 20px;
+                padding: 2.5rem 1.5rem 2rem;
+            }
+            .btn-submit {
+                width: 100%;
+            }
+            .role-selector {
+                gap: 0.5rem;
+            }
+            .role-option {
+                padding: 0.65rem 0.85rem;
+                font-size: 0.9rem;
+            }
+
+            /* ── PRICING ── */
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .pricing-card {
+                padding: 2rem 1.5rem;
+            }
+            /* Featured card scale-up looks broken on narrow screens */
+            .pricing-card.featured {
+                transform: none;
+            }
+            .pricing-card.featured:hover {
+                transform: translateY(-5px);
+            }
+
+            /* ── TEAM ── */
+            .team-card {
+                padding: 1.75rem 1.5rem;
+                gap: 1.25rem;
+            }
+            .team-card-header {
+                gap: 1.25rem;
+            }
+            .team-card img {
+                width: 100px;
+                height: 100px;
+                min-width: 100px;
+            }
+            .team-name {
+                font-size: 1.4rem;
+            }
+            .team-role {
+                font-size: 1rem;
+            }
+
+            /* ── PRODUCTS SHOWCASE ── */
+            .pv-card {
+                padding: 1.5rem 1.25rem;
+            }
+
+            /* ── REVIEWS ── */
+            .rcard {
+                padding: 1.5rem 1.25rem 1.25rem;
+            }
+
+            /* ── VALUE CARDS (old section) ── */
+            .value-card {
+                padding: 1.75rem 1.5rem;
+            }
+
+            /* ── BENEFIT CARDS ── */
+            .benefit-card {
+                padding: 1.75rem 1.5rem;
+            }
+
+            /* ── RESULTS — 2-col to fit on phone ── */
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            .result-card {
+                padding: 1.5rem 1.25rem;
+            }
+            .result-number {
+                font-size: 2.5rem;
+            }
+
+            /* ── FORMATS COMPACT ── */
+            .format-photo-card {
+                height: 240px;
+                min-height: unset;
+            }
+
+            /* ── MOBILE MENU ── */
+            .mobile-menu {
+                padding: 6.5rem 2rem 2.5rem;
+                max-width: 100%;
+            }
+            .mobile-menu ul {
+                gap: 1.5rem;
+            }
+            .mobile-menu ul li a {
+                font-size: 1.2rem;
+            }
+
+            /* ── FOOTER ── */
+            footer {
+                margin-top: 2.5rem;
+            }
+            .footer-contacts {
+                gap: 0.75rem;
+            }
+        }
+
+        /* ── SMALL PHONES: ≤ 390px (iPhone SE 375, older Android 360) ── */
+        @media (max-width: 390px) {
+            .hero {
+                padding-top: 105px;
+            }
+            /* Slightly smaller image block on tiny screens */
+            .hero-images {
+                height: 135px;
+                margin-bottom: 0.5rem;
+                padding: 0 0.5rem;
+            }
+            .hero-image-wrapper {
+                width: 42%;
+                max-width: 160px;
+            }
+            .hero-image-wrapper:first-child {
+                margin-right: -26px;
+            }
+            .hero-image-wrapper:last-child {
+                margin-top: 10px;
+                margin-left: -26px;
+            }
+            .hero-title {
+                font-size: clamp(1.5rem, 10vw, 2rem);
+            }
+            .hero-subtitle {
+                font-size: clamp(0.95rem, 6vw, 1.3rem);
+            }
+            h2 {
+                font-size: clamp(1.4rem, 9vw, 2rem);
+            }
+            .skill-tag {
+                font-size: 0.65rem;
+                padding: 0.38rem 0.8rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .team-card img {
+                width: 80px;
+                height: 80px;
+                min-width: 80px;
+            }
+            .btn {
+                font-size: 0.875rem;
+            }
+        }
+
+        /* ── TABLET PORTRAIT: 768px – 1024px ── */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .hero {
+                padding-top: 130px;
+            }
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2.5rem 2.5rem;
+            }
+            .hero-images {
+                display: none;
+            }
+            .hero-title {
+                font-size: clamp(2.2rem, 5vw, 3.5rem);
+            }
+            .skill-tag {
+                font-size: 0.82rem;
+                padding: 0.55rem 1.3rem;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-card {
+                padding: 2rem;
+            }
+            .pricing-card.featured {
+                transform: none;
+            }
+            .pricing-card.featured:hover {
+                transform: translateY(-5px);
+            }
+            .contact-section {
+                padding: 3.5rem 2.5rem 3rem;
+            }
+            #about .about-split {
+                gap: 2.5rem;
+            }
+        }
+
 </style>
 </head>
 <body>
@@ -2823,14 +3451,14 @@
     <!-- Навигация -->
     <nav>
         <div class="nav-content">
-            <div class="burger-menu" id="burgerMenu">
+            <button type="button" class="burger-menu" id="burgerMenu" onclick="toggleMenu()" aria-label="Меню">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
         <div class="mobile-menu" id="mobileMenu">
-            <button class="mobile-menu-close" id="menuClose" aria-label="Закрыть меню">
+            <button type="button" class="mobile-menu-close" id="menuClose" onclick="closeMenu()" aria-label="Закрыть меню">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
                     <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
                 </svg>
@@ -2861,10 +3489,10 @@
             
             <div class="hero-images">
                 <div class="hero-image-wrapper">
-                    <img src="images/portrait-young-smiling-girl-with-ginger-hair-waving-hand.jpg" alt="Студентка приветствует">
+                    <img src="images/portrait-young-smiling-girl-with-ginger-hair-waving-hand.jpg" alt="Подросток на онлайн-курсе soft skills приветствует куратора">
                 </div>
                 <div class="hero-image-wrapper">
-                    <img src="images/medium-shot-people-working-laptops.jpg" alt="Студенты за ноутбуками">
+                    <img src="images/medium-shot-people-working-laptops.jpg" alt="Школьники развивают навыки будущего на онлайн-занятии">
                 </div>
             </div>
         </div>
@@ -3075,28 +3703,28 @@
 
             <div class="where-grid">
                 <article class="where-card">
-                    <div class="where-media"><img src="images/college-students-cramming-outdoor.jpg" alt="Учёба"></div>
+                    <div class="where-media"><img src="images/college-students-cramming-outdoor.jpg" alt="Подростки применяют soft skills в учёбе"></div>
                     <div class="where-body">
                         <h4>Учёба</h4>
                         <p class="typo">Чтобы уверенно выступать перед классом и участвовать в дискуссиях, структурировать информацию, критически мыслить, работать над проектами в команде.</p>
                     </div>
                 </article>
                 <article class="where-card">
-                    <div class="where-media"><img src="images/medium-shot-woman-with-brush-palette.jpg" alt="Будущая работа"></div>
+                    <div class="where-media"><img src="images/colleagues-learning-together-group-study.jpg" alt="Навыки командной работы для будущей карьеры подростков"></div>
                     <div class="where-body">
                         <h4>Будущая работа</h4>
                         <p class="typo">Чтобы пройти собеседование, эффективно взаимодействовать с окружающими, адаптироваться к изменениям, решать нестандартные задачи.</p>
                     </div>
                 </article>
                 <article class="where-card">
-                    <div class="where-media"><img src="images/medium-shot-smiley-friends-couple.jpg" alt="Жизнь и общение"></div>
+                    <div class="where-media"><img src="images/medium-shot-smiley-friends-couple.jpg" alt="Подростки развивают коммуникацию и навыки общения"></div>
                     <div class="where-body">
                         <h4>Жизнь и общение</h4>
                         <p class="typo">Чтобы ставить цели и достигать их, отстаивать свою позицию и не избегать конфликтов, а уметь договариваться.</p>
                     </div>
                 </article>
                 <article class="where-card">
-                    <div class="where-media"><img src="images/colleagues-learning-together-group-study.jpg" alt="Самоопределение"></div>
+                    <div class="where-media"><img src="images/medium-shot-woman-with-brush-palette.jpg" alt="Креативность и самоопределение подростков через практику"></div>
                     <div class="where-body">
                         <h4>Самоопределение</h4>
                         <p class="typo">Чтобы выбирать профессию и хобби не вслепую, а исходя из реальных интересов и ценностей. А ещё — отличать свои желания от навязанных.</p>
@@ -3173,7 +3801,7 @@
                     <div class="format-photo-overlay">
                         <div class="format-photo-quote">учимся делать — <span>не просто слушать</span></div>
                     </div>
-                    <img src="images/student_ok.png" alt="Студентка" class="fpc-photo">
+                    <img src="images/student_ok.png" alt="Ученица онлайн-лаборатории навыков будущего для подростков" class="fpc-photo">
                 </div>
             </div>
         </div>
@@ -3193,12 +3821,12 @@
 
             <div class="reviews-stats">
                 <div class="rstat">
-                    <div class="rstat-top"><span class="rstat-icon">⭐</span><span class="rstat-num">5</span></div>
-                    <div class="rstat-lbl">из 5 — оценка пользы и качества воркшопов</div>
+                    <div class="rstat-top"><span class="rstat-icon">⭐</span><span class="rstat-num">5/5</span></div>
+                    <div class="rstat-lbl">оценка пользы и качества воркшопов</div>
                 </div>
                 <div class="rstat">
                     <div class="rstat-top"><span class="rstat-icon">🚀</span><span class="rstat-num">87,5%</span></div>
-                    <div class="rstat-lbl">выпускников применяют изученное в жизни</div>
+                    <div class="rstat-lbl">выпускников уже применяют изученное в жизни</div>
                 </div>
                 <div class="rstat">
                     <div class="rstat-top"><span class="rstat-icon">❤️</span><span class="rstat-num">79%</span></div>
@@ -3210,7 +3838,7 @@
                 <div class="rcard">
                     <div class="rcard-body">
                         <span class="rcard-quote-icon">"</span>
-                        <p class="rcard-text">курс получился супер классный!! я очень многого не знала. Теперь буду пользоваться всеми этими техниками в жизни! 😌 Воркшопы получились суперские! Очень семейные 🥹 Было комфортно приходить. И на них именно хотелось&nbsp;(!) идти!</p>
+                        <p class="rcard-text">Курс получился супер классный!! я очень многого не знала. Теперь буду пользоваться всеми этими техниками в жизни! 😌 Воркшопы получились суперские! Очень семейные 🥹 Было комфортно приходить. И на них именно хотелось&nbsp;(!) идти!</p>
                     </div>
                     <div class="rcard-footer">
                         <div class="rcard-avatar">👩‍🎓</div>
@@ -3252,7 +3880,7 @@
         <div class="pv-grid">
 
             <!-- Card 1: 4К -->
-            <article class="pv-card" id="card-4k" onclick="togglePvPanel('panel-4k','btn-4k')" role="button" aria-expanded="false" tabindex="0">
+            <article class="pv-card" id="card-4k" role="region" tabindex="0">
                 <div class="pv-badge">🎯 интенсив · сейчас доступен</div>
                 <h3 class="pv-name">🧠 <span>4К:</span> навыки будущего</h3>
                 <p class="pv-tagline">Серия воркшопов, чтобы познакомиться с онлайн-лабораторией и прокачать 4К навыки&nbsp;— коммуникацию, креативность, критическое мышление и работу в команде.</p>
@@ -3267,41 +3895,18 @@
                     <span class="pv-price-label">от</span>
                     <span class="pv-price-amount">9 900 ₽</span>
                 </div>
-                <button class="pv-expand-btn" id="btn-4k">
+                <button type="button" class="pv-expand-btn" id="btn-4k" onclick="togglePvPanel('panel-4k','btn-4k')">
                     Подробнее&nbsp;<i class="arrow">↓</i>
                 </button>
             </article>
 
-            <!-- Card 2: Нейросети -->
-            <article class="pv-card pv-card--ai">
-                <div class="pv-badge pv-badge--wip">🚧 в разработке</div>
-                <h3 class="pv-name">🤖 <span>Нейросети</span> для подростков</h3>
-                <p class="pv-tagline">Умение работать с&nbsp;ИИ — самый востребованный навык на ближайшее десятилетие. Подросток научится не списывать домашку, а использовать нейросеть с умом — как личного ассистента, репетитора и инструмент для достижения целей.</p>
-                <div class="pv-meta">
-                    <span class="pv-meta-pill">📅 2 мастер-класса</span>
-                    <span class="pv-meta-pill">⏱ по 90 мин</span>
-                    <span class="pv-meta-pill">💻 онлайн</span>
-                    <span class="pv-meta-pill">🗓 апрель 2026</span>
-                </div>
-
-                <div class="pv-price-row">
-                    <span class="pv-price-label">от</span>
-                    <span class="pv-price-amount">4 490 ₽</span>
-                </div>
-                <a href="#contact" class="btn-earlybird" onclick="event.stopPropagation()">
-                    🔔 Забронировать со скидкой
-                </a>
-            </article>
-
-        </div>
-
-        <!-- EXPANDED PANEL: 4К -->
-        <div class="pv-detail-panel" id="panel-4k" aria-hidden="true">
-            <div class="pv-panel-inner">
+            <!-- EXPANDED PANEL: 4К (between cards for correct mobile order) -->
+            <div class="pv-detail-panel" id="panel-4k" aria-hidden="true">
+                <div class="pv-panel-inner">
 
                 <div class="pv-panel-hero">
                     <div class="pv-panel-eyebrow">✦ интенсив · 4К: навыки будущего</div>
-                    <h2 class="pv-panel-title"><span>4 воркшопа,</span> которые меняют то, как ты думаешь и&nbsp;общаешься</h2>
+                    <h2 class="pv-panel-title"><span>4 воркшопа,</span> чтобы начать осознанно работать на своё&nbsp;будущее</h2>
                     <p class="pv-panel-desc">Коммуникация, креативность, критическое мышление и&nbsp;командная работа&nbsp;— навыки, которые нужны везде: в&nbsp;учёбе, в&nbsp;работе, в&nbsp;жизни. Мы прокачиваем их через практику, а&nbsp;не лекции.</p>
                     <div class="pv-panel-specs">
                         <div class="pv-spec"><span class="pv-spec-val">4 воркшопа</span><span class="pv-spec-lbl">по 90 минут онлайн</span></div>
@@ -3313,23 +3918,23 @@
 
                 <div class="pv-panel-body">
 
-                    <h3 class="pv-skills-heading">чему научатся</h3>
+                    <h3 class="pv-skills-heading">после интенсива подросток...</h3>
                     <div class="pv-skills-bento">
                         <div class="pv-skill-tile">
                             <div class="pv-skill-header"><div class="pv-skill-icon pv-skill-icon--comm">💬</div><div class="pv-skill-title">Коммуникация</div></div>
-                            <p class="pv-skill-desc">Научатся структурированно рассказывать о себе и давать конструктивную обратную связь без конфликтов</p>
+                            <p class="pv-skill-desc">Научится уверенно рассказывать о себе — это пригодится на собеседованиях и в школе. Освоит искусство обратной связи: сможет указывать на ошибки другим так, что они скажут спасибо.</p>
                         </div>
                         <div class="pv-skill-tile">
                             <div class="pv-skill-header"><div class="pv-skill-icon pv-skill-icon--creat">✨</div><div class="pv-skill-title">Креативность</div></div>
-                            <p class="pv-skill-desc">Освоят техники генерации идей и создадут визуальный контент с помощью нейросетей</p>
+                            <p class="pv-skill-desc">Освоит техники генерации идей и создаст визуальный контент с помощью нейросетей для решения конкретных задач.</p>
                         </div>
                         <div class="pv-skill-tile">
                             <div class="pv-skill-header"><div class="pv-skill-icon pv-skill-icon--crit">🔍</div><div class="pv-skill-title">Критическое мышление</div></div>
-                            <p class="pv-skill-desc">Научатся отличать факты от мнений и проверять любую информацию на достоверность</p>
+                            <p class="pv-skill-desc">Включит детектор лжи в любом разговоре и в интернете. Научится отличать факты от мнений и перестанет попадаться на удочку манипуляторов.</p>
                         </div>
                         <div class="pv-skill-tile">
                             <div class="pv-skill-header"><div class="pv-skill-icon pv-skill-icon--team">🤝</div><div class="pv-skill-title">Командная работа</div></div>
-                            <p class="pv-skill-desc">Определят свою идеальную роль в команде и научатся эффективно работать над общими задачами</p>
+                            <p class="pv-skill-desc">Поймёт, почему в командной работе возникают сложности и как их решать. Найдёт свою суперсилу в команде и узнает, как работать над общими задачами быстро и без ссор.</p>
                         </div>
                     </div>
 
@@ -3373,6 +3978,29 @@
             </div>
         </div>
 
+            <!-- Card 2: Нейросети -->
+            <article class="pv-card pv-card--ai">
+                <div class="pv-badge pv-badge--wip">🚧 в разработке</div>
+                <h3 class="pv-name">🤖 <span>Нейросети</span> для подростков</h3>
+                <p class="pv-tagline">Умение работать с&nbsp;ИИ — самый востребованный навык на ближайшее десятилетие. Подросток научится не списывать домашку, а использовать нейросети с умом — как личного ассистента, репетитора и инструмент для достижения целей.</p>
+                <div class="pv-meta">
+                    <span class="pv-meta-pill">📅 2 мастер-класса</span>
+                    <span class="pv-meta-pill">⏱ по 90 мин</span>
+                    <span class="pv-meta-pill">💻 онлайн</span>
+                    <span class="pv-meta-pill">🗓 апрель 2026</span>
+                </div>
+
+                <div class="pv-price-row">
+                    <span class="pv-price-label">от</span>
+                    <span class="pv-price-amount">4 490 ₽</span>
+                </div>
+                <a href="#contact" class="btn-earlybird" onclick="event.stopPropagation()">
+                    🔔 Забронировать со скидкой
+                </a>
+            </article>
+
+        </div>
+
     </div>
 </section>
 <!-- Команда -->
@@ -3383,7 +4011,7 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-card-header">
-                        <img src="images/daria.jpg" alt="Дарья Смирнова">
+                        <img src="images/daria.jpg" alt="Дарья Смирнова — куратор и методолог онлайн-курсов для подростков">
                         <h3 class="team-name">Дарья Смирнова</h3>
                     </div>
                     <p class="team-bio">
@@ -3400,7 +4028,7 @@
                 
                 <div class="team-card">
                     <div class="team-card-header">
-                        <img src="images/mikhail.png" alt="Михаил Короткевич">
+                        <img src="images/mikhail.png" alt="Михаил Короткевич — куратор курса по нейросетям для подростков">
                         <h3 class="team-name">Михаил Короткевич</h3>
                     </div>
                     <p class="team-bio">
@@ -3429,11 +4057,11 @@
                     <div class="form-group">
                         <label>Кто вы? *</label>
                         <div class="role-selector">
-                            <label class="role-option">
-                                <input type="radio" name="role" value="parent" id="roleParent" required>
+                            <label class="role-option" onclick="selectRole('parent')">
+                                <input type="radio" name="role" value="parent" id="roleParent">
                                 <span>&#128106;&nbsp;Я родитель</span>
                             </label>
-                            <label class="role-option">
+                            <label class="role-option" onclick="selectRole('teen')">
                                 <input type="radio" name="role" value="teen" id="roleTeen">
                                 <span>&#129489;&nbsp;Я подросток</span>
                             </label>
@@ -3476,12 +4104,12 @@
                         <label>Телефон *</label>
                         <div class="phone-row" id="phone-ru-mode">
                             <button type="button" class="phone-flag-btn" id="phoneFlagBtn"
-                                    title="Нажмите, чтобы ввести номер другой страны">&#127479;&#127482;&nbsp;+7</button>
+                                    title="Нажмите, чтобы ввести номер другой страны"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
                             <input type="tel" id="phone_local" name="phone_local" placeholder="999 000-00-00">
                         </div>
                         <div class="phone-row" id="phone-custom-mode" style="display:none; margin-top:0;">
                             <input type="tel" id="phone_custom" name="phone_custom" placeholder="+__ ___ ___-__-__">
-                            <button type="button" class="phone-back-btn" id="phoneBackBtn">&#127479;&#127482;&nbsp;+7</button>
+                            <button type="button" class="phone-back-btn" id="phoneBackBtn"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
                         </div>
                         <input type="hidden" id="phone_final" name="phone">
                     </div>
@@ -3496,15 +4124,15 @@
                     <div class="form-group" id="group-contact" style="display:none;">
                         <label>Как с вами связаться? *</label>
                         <div class="contact-method-group">
-                            <label class="contact-method-option">
+                            <label class="contact-method-option" onclick="selectContact('telegram')">
                                 <input type="radio" name="contact_method" value="telegram" id="cmTelegram">
                                 <span>Telegram</span>
                             </label>
-                            <label class="contact-method-option">
+                            <label class="contact-method-option" onclick="selectContact('max')">
                                 <input type="radio" name="contact_method" value="max">
                                 <span>MAX</span>
                             </label>
-                            <label class="contact-method-option">
+                            <label class="contact-method-option" onclick="selectContact('phone')">
                                 <input type="radio" name="contact_method" value="phone">
                                 <span>Звонок по телефону</span>
                             </label>
@@ -3535,207 +4163,274 @@
         </div>
     </section>
 
+    <!-- Модал успешной отправки -->
+    <div class="success-modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+        <div class="success-modal">
+            <div class="success-modal-icon">✅</div>
+            <h3 id="successModalTitle">Заявка отправлена!</h3>
+            <p>Мы получили ваш запрос и свяжемся с вами в ближайшее время. Готовьтесь — скоро начнём!</p>
+            <button class="success-modal-btn" id="successModalClose">Отлично!</button>
+        </div>
+    </div>
+
     <!-- Футер -->
     <footer>
         <div class="footer-content">
             <p><strong>Навыки Будущего</strong> — онлайн-лаборатория для подростков. Развиваем навыки для учёбы, жизни и карьеры.</p>
-            <p style="margin-top: 2rem; opacity: 0.6;">© 2026 Навыки Будущего. Все права защищены.</p>
+
+            <div class="footer-contacts">
+                <!-- Telegram -->
+                <a href="https://t.me/dasmirn0va" target="_blank" rel="noopener" class="footer-contact-link">
+                    <img src="images/Telegram_Messenger.png" alt="Telegram — написать в онлайн-лабораторию навыков будущего" width="24" height="24" style="border-radius:6px; object-fit:contain;">
+                    Telegram
+                </a>
+                <!-- MAX -->
+                <a href="https://vk.me/+79309937335" target="_blank" rel="noopener" class="footer-contact-link">
+                    <img src="images/max logo.png" alt="MAX мессенджер — связаться с онлайн-лабораторией навыков будущего" width="24" height="24" style="border-radius:6px; object-fit:contain;">
+                    MAX
+                </a>
+                <!-- Телефон -->
+                <a href="tel:+79309937335" class="footer-contact-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" stroke="url(#ph-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="ph-grad" x1="0" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3B82F6"/>
+                                <stop offset="1" stop-color="#EC4899"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    +7 930 993-73-35
+                </a>
+            </div>
+
+            <div class="footer-legal">
+                <a href="https://disk.yandex.ru/i/4FgI2LT1dNtdxg" target="_blank" rel="noopener">Публичная оферта</a>
+            </div>
+
+            <p style="margin-top: 1.5rem; opacity: 0.6;">© 2026 Навыки Будущего. Все права защищены.</p>
         </div>
     </footer>
 
     <script>
-        // Плавная прокрутка для навигации
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+        // ===== ГЛОБАЛЬНЫЕ ФУНКЦИИ (работают с onclick в HTML) =====
 
-        // ===== Выбор роли =====
-        (function () {
-            function showGroup(id, show) {
-                var el = document.getElementById(id);
-                if (el) el.style.display = show ? 'flex' : 'none';
+        // --- Бургер-меню ---
+        function toggleMenu() {
+            var burger = document.getElementById('burgerMenu');
+            var menu   = document.getElementById('mobileMenu');
+            var isOpen = menu.classList.contains('active');
+            if (isOpen) { closeMenu(); } else {
+                burger.classList.add('active');
+                menu.classList.add('active');
             }
-
-            document.querySelectorAll('input[name="role"]').forEach(function (r) {
-                r.addEventListener('change', function () {
-                    var isParent = this.value === 'parent';
-
-                    showGroup('group-parent-name', isParent);
-                    showGroup('group-teen-name',   isParent);
-                    showGroup('group-self-name',   !isParent);
-
-                    document.getElementById('parent_name').required = isParent;
-                    document.getElementById('teen_name').required   = isParent;
-                    document.getElementById('self_name').required   = !isParent;
-
-                    ['group-age','group-phone','group-email','group-contact','group-request'].forEach(function (id) {
-                        showGroup(id, true);
-                    });
-
-                    document.getElementById('age').required = true;
-                    document.getElementById('phone_local').required = true;
-                    document.querySelector('input[name="contact_method"]').required = true;
-
-                    document.getElementById('form-footer').style.display = 'block';
-                });
-            });
-        })();
-
-        // ===== Телефон: +7 / другая страна =====
-        document.getElementById('phoneFlagBtn').addEventListener('click', function () {
-            document.getElementById('phone-ru-mode').style.display = 'none';
-            document.getElementById('phone-custom-mode').style.display = 'flex';
-            document.getElementById('phone_local').required = false;
-            document.getElementById('phone_custom').required = true;
-            document.getElementById('phone_custom').focus();
-        });
-        document.getElementById('phoneBackBtn').addEventListener('click', function () {
-            document.getElementById('phone-custom-mode').style.display = 'none';
-            document.getElementById('phone-ru-mode').style.display = 'flex';
-            document.getElementById('phone_custom').required = false;
-            document.getElementById('phone_local').required = true;
-            document.getElementById('phone_local').focus();
-        });
-
-        // ===== Способ связи: @ник для Telegram =====
-        document.querySelectorAll('input[name="contact_method"]').forEach(function (r) {
-            r.addEventListener('change', function () {
-                var tgW = document.getElementById('tg-username-wrapper');
-                tgW.style.display = this.value === 'telegram' ? 'flex' : 'none';
-                if (this.value !== 'telegram') document.getElementById('tg_username').value = '';
-            });
-        });
-
-        // ===== Отправка в Google Sheets =====
-        var scriptURL = 'https://script.google.com/macros/s/AKfycbxZKe3xG5pWJmsQCRNGhGKN6DJX5Wg1yYgHUfDC8NzinGacvDPH4tW3ZfqVyKel4RjH/exec';
-        document.querySelector('#contact-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Собираем телефон
-            var phoneFinal = document.getElementById('phone_final');
-            if (document.getElementById('phone-ru-mode').style.display !== 'none') {
-                phoneFinal.value = '+7 ' + document.getElementById('phone_local').value;
-            } else {
-                phoneFinal.value = document.getElementById('phone_custom').value;
-            }
-            fetch(scriptURL, { method: 'POST', body: new FormData(this) })
-                .then(function (res) { return res.json(); })
-                .then(function (result) {
-                    if (result.result === 'success') {
-                        alert('\u2705 Заявка отправлена! Мы свяжемся с вами.');
-                        document.querySelector('#contact-form').reset();
-                        ['group-parent-name','group-teen-name','group-self-name',
-                         'group-age','group-phone','group-email','group-contact','group-request'].forEach(function (id) {
-                            var el = document.getElementById(id); if (el) el.style.display = 'none';
-                        });
-                        document.getElementById('form-footer').style.display = 'none';
-                        document.getElementById('tg-username-wrapper').style.display = 'none';
-                        document.getElementById('phone-custom-mode').style.display = 'none';
-                        document.getElementById('phone-ru-mode').style.display = 'flex';
-                    } else {
-                        alert('\u274c Ошибка. Попробуйте ещё раз.');
-                    }
-                })
-                .catch(function (err) {
-                    console.error('Error!', err);
-                    alert('\u274c Ошибка отправки. Проверьте интернет.');
-                });
-        });
-
-        // ===== Анимация при прокрутке
-
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        // Наблюдаем за карточками и секциями
-        document.querySelectorAll('.value-card, .skill-tag, .format-card, .benefit-card, .team-card, .pricing-card').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Бургер-меню
-        const burgerMenu = document.getElementById('burgerMenu');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuClose = document.getElementById('menuClose');
-        
+        }
         function closeMenu() {
-            burgerMenu.classList.remove('active');
-            mobileMenu.classList.remove('active');
+            var burger = document.getElementById('burgerMenu');
+            var menu   = document.getElementById('mobileMenu');
+            burger.classList.remove('active');
+            menu.classList.remove('active');
         }
 
-        burgerMenu.addEventListener('click', () => {
-            burgerMenu.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
+        // --- Выбор роли в форме ---
+        function selectRole(role) {
+            var isParent = role === 'parent';
+
+            // Отмечаем radio вручную (на iOS change может не сработать)
+            document.getElementById('roleParent').checked = isParent;
+            document.getElementById('roleTeen').checked   = !isParent;
+
+            function show(id, visible) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = visible ? 'flex' : 'none';
+            }
+
+            show('group-parent-name', isParent);
+            show('group-teen-name',   isParent);
+            show('group-self-name',   !isParent);
+
+            document.getElementById('parent_name').required = isParent;
+            document.getElementById('teen_name').required   = isParent;
+            document.getElementById('self_name').required   = !isParent;
+
+            ['group-age','group-phone','group-email','group-contact','group-request'].forEach(function(id) {
+                show(id, true);
+            });
+
+            document.getElementById('form-footer').style.display = 'block';
+        }
+
+        // --- Выбор способа связи ---
+        function selectContact(method) {
+            // Снимаем все радио и ставим нужный
+            document.querySelectorAll('input[name="contact_method"]').forEach(function(r) {
+                r.checked = (r.value === method);
+            });
+            var tgW = document.getElementById('tg-username-wrapper');
+            tgW.style.display = method === 'telegram' ? 'flex' : 'none';
+            if (method !== 'telegram') document.getElementById('tg_username').value = '';
+        }
+
+        // --- Телефон: переключение флага ---
+        function switchToCustomPhone() {
+            document.getElementById('phone-ru-mode').style.display    = 'none';
+            document.getElementById('phone-custom-mode').style.display = 'flex';
+            document.getElementById('phone_local').required  = false;
+            document.getElementById('phone_custom').required = true;
+            document.getElementById('phone_custom').focus();
+        }
+        function switchToRuPhone() {
+            document.getElementById('phone-custom-mode').style.display = 'none';
+            document.getElementById('phone-ru-mode').style.display     = 'flex';
+            document.getElementById('phone_custom').required = false;
+            document.getElementById('phone_local').required  = true;
+            document.getElementById('phone_local').focus();
+        }
+
+        // --- Модал ---
+        function closeModal() {
+            document.getElementById('successModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // --- Раскрытие карточки продукта ---
+        function togglePvPanel(panelId, btnId) {
+            var panel = document.getElementById(panelId);
+            var btn   = document.getElementById(btnId);
+            if (!panel) return;
+            var isOpen = panel.classList.contains('is-open');
+            if (isOpen) {
+                panel.classList.remove('is-open');
+                panel.setAttribute('aria-hidden', 'true');
+                if (btn) btn.classList.remove('is-open');
+            } else {
+                panel.classList.add('is-open');
+                panel.setAttribute('aria-hidden', 'false');
+                if (btn) btn.classList.add('is-open');
+                setTimeout(function() {
+                    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 80);
+            }
+        }
+
+        // ===== НАВЕШИВАЕМ ОБРАБОТЧИКИ ПОСЛЕ ЗАГРУЗКИ =====
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Закрытие меню при клике на ссылку
+            document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            // Закрытие меню при тапе вне его
+            document.addEventListener('touchstart', function(e) {
+                var burger = document.getElementById('burgerMenu');
+                var menu   = document.getElementById('mobileMenu');
+                if (menu.classList.contains('active') &&
+                    !burger.contains(e.target) && !menu.contains(e.target)) {
+                    closeMenu();
+                }
+            }, { passive: true });
+
+            // Кнопки флага телефона
+            var flagBtn = document.getElementById('phoneFlagBtn');
+            var backBtn = document.getElementById('phoneBackBtn');
+            if (flagBtn) flagBtn.addEventListener('click', switchToCustomPhone);
+            if (backBtn) backBtn.addEventListener('click', switchToRuPhone);
+
+            // Модал: закрытие по кнопке и по клику на фон
+            var modalClose = document.getElementById('successModalClose');
+            var overlay    = document.getElementById('successModal');
+            if (modalClose) modalClose.addEventListener('click', closeModal);
+            if (overlay)    overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeModal();
+            });
+
+            // Плавная прокрутка
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        closeMenu();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Анимации при скролле
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) entry.target.classList.add('fade-in');
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            document.querySelectorAll('.value-card, .skill-tag, .format-card, .benefit-card, .team-card, .pricing-card').forEach(function(el) {
+                observer.observe(el);
+            });
         });
 
-        menuClose.addEventListener('click', closeMenu);
-        
-        // Закрытие меню при клике на ссылку
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', closeMenu);
+        // ===== ОТПРАВКА ФОРМЫ =====
+        var scriptURL = 'https://script.google.com/macros/s/AKfycbxXKfDheiPgjwqLhfWIdKxaZM8FQ2jP64bIyCULjSK8zKLA8N3t9bxIf0Du5RAPMjqd/exec';
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('contact-form');
+            if (!form) return;
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var phoneFinal = document.getElementById('phone_final');
+                if (document.getElementById('phone-ru-mode').style.display !== 'none') {
+                    phoneFinal.value = '+7 ' + document.getElementById('phone_local').value;
+                } else {
+                    phoneFinal.value = document.getElementById('phone_custom').value;
+                }
+                var fd = new FormData(form);
+                var payload = {
+                    whoAreYou:     fd.get('role') === 'parent' ? 'Я родитель' : 'Я подросток',
+                    parentName:    fd.get('parent_name') || '',
+                    teenName:      fd.get('teen_name')   || '',
+                    teenSelfName:  fd.get('self_name')   || '',
+                    teenAge:       fd.get('age')          || '',
+                    phone:         fd.get('phone')        || '',
+                    email:         fd.get('email')        || '',
+                    contactMethod: fd.get('contact_method') || '',
+                    tgUsername:    fd.get('telegram') ? '@' + fd.get('telegram') : '',
+                    message:       fd.get('request')      || ''
+                };
+                fetch(scriptURL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain' },
+                    body: JSON.stringify(payload)
+                }).then(function() {
+                    form.reset();
+                    ['group-parent-name','group-teen-name','group-self-name',
+                     'group-age','group-phone','group-email','group-contact','group-request'].forEach(function(id) {
+                        var el = document.getElementById(id);
+                        if (el) el.style.display = 'none';
+                    });
+                    document.getElementById('form-footer').style.display = 'none';
+                    document.getElementById('tg-username-wrapper').style.display = 'none';
+                    document.getElementById('phone-custom-mode').style.display = 'none';
+                    document.getElementById('phone-ru-mode').style.display = 'flex';
+                    document.getElementById('successModal').classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }).catch(function(err) {
+                    console.error('Error!', err);
+                    alert('Ошибка отправки. Проверьте интернет.');
+                });
+            });
         });
-        
-        // Закрытие меню при клике вне его
-        document.addEventListener('click', (e) => {
-            if (!burgerMenu.contains(e.target) && !mobileMenu.contains(e.target)) {
-                closeMenu();
-            }
-        });
-        
+
     </script>
 
     <script>
-      // Simple typograph: prevent hanging 1–2 letter prepositions/conjunctions in Russian
+      // Типограф: неразрывные пробелы после предлогов
       (function () {
-        const rx = /(^|\s)([вксуоаия]\s|и\s|а\s|но\s|да\s|за\s|по\s|на\s|из\s|от\s|до\s|со\s|под\s|над\s|при\s|про\s|для\s)(?=\S)/gi;
-        const nodes = document.querySelectorAll('.typo');
-        nodes.forEach(el => {
-          el.innerHTML = el.innerHTML.replace(rx, (m, p1, p2) => (p1 + p2.replace(/\s/g, '&nbsp;')));
+        var rx = /(^|\s)([вксуоаия]\s|и\s|а\s|но\s|да\s|за\s|по\s|на\s|из\s|от\s|до\s|со\s|под\s|над\s|при\s|про\s|для\s)(?=\S)/gi;
+        document.querySelectorAll('.typo').forEach(function(el) {
+          el.innerHTML = el.innerHTML.replace(rx, function(m, p1, p2) {
+            return p1 + p2.replace(/\s/g, '\u00a0');
+          });
         });
       })();
-    function togglePvPanel(panelId, btnId) {
-    const panel = document.getElementById(panelId);
-    const btn   = document.getElementById(btnId);
-    const card  = btn ? btn.closest('.pv-card') : null;
-    if (!panel) return;
-    const isOpen = panel.classList.contains('is-open');
-    if (isOpen) {
-        panel.classList.remove('is-open');
-        panel.setAttribute('aria-hidden', 'true');
-        if (btn)  btn.classList.remove('is-open');
-        if (card) card.setAttribute('aria-expanded', 'false');
-    } else {
-        panel.classList.add('is-open');
-        panel.setAttribute('aria-hidden', 'false');
-        if (btn)  btn.classList.add('is-open');
-        if (card) card.setAttribute('aria-expanded', 'true');
-        setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
-    }
-}
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.pv-card[tabindex]').forEach(function(card) {
-        card.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
-        });
-    });
-});
     </script>
 </body>
 </html>
