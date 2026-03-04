@@ -3103,51 +3103,53 @@
                 font-size: 0.95rem;
             }
 
-            /* ── HERO IMAGES: show above text on mobile ── */
-            /* Grid order: images (-1) appears before hero-text (0) */
-            .hero-images {
-                display: flex;
-                flex-direction: row;
-                height: 170px;
-                overflow: visible;
-                order: -1;
-                margin-bottom: 0.75rem;
-                padding: 0 1rem;
-                justify-content: center;
-                gap: 0;
-            }
-            /* Override absolute positioning — make them flow in flexbox */
-            .hero-image-wrapper {
-                position: relative;
-                top: auto;
-                left: auto;
-                bottom: auto;
-                right: auto;
-                width: 44%;
-                max-width: 190px;
-                height: 100%;
-                flex-shrink: 0;
-                border-width: 3px;
-            }
-            .hero-image-wrapper:first-child {
-                transform: rotate(-4deg);
-                z-index: 1;
-                margin-right: -30px;
-            }
-            .hero-image-wrapper:last-child {
-                transform: rotate(3deg);
-                margin-top: 12px;
-                z-index: 2;
-                margin-left: -30px;
-            }
+            /* ── HERO IMAGES: big, overlapping, above text ── */
+.hero-images {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    overflow: visible;
+    order: -1;
+    margin-bottom: 1rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    min-height: 200px;
+}
+.hero-image-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: 52vw;
+    max-width: 240px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    flex-shrink: 0;
+    border-width: 3px;
+    border-radius: 18px;
+}
+.hero-image-wrapper:first-child {
+    transform: rotate(-6deg) translateX(12px);
+    z-index: 1;
+    margin-right: -36px;
+}
+.hero-image-wrapper:last-child {
+    transform: rotate(4deg) translateX(-12px) translateY(18px);
+    z-index: 2;
+    margin-left: -36px;
+}
 
-            /* Prevent hero overflow from clipping images */
-            .hero {
-                overflow: visible;
-            }
-            .hero-content {
-                overflow: visible;
-            }
+/* Prevent hero from clipping photos */
+.hero {
+    overflow: visible;
+}
+.hero-content {
+    overflow: visible;
+}
 
             /* ── SKILLS MARQUEE: smaller tags so all skills are visible ── */
             .skill-tag {
@@ -3351,22 +3353,20 @@
                 padding-top: 105px;
             }
             /* Slightly smaller image block on tiny screens */
-            .hero-images {
-                height: 135px;
-                margin-bottom: 0.5rem;
-                padding: 0 0.5rem;
-            }
-            .hero-image-wrapper {
-                width: 42%;
-                max-width: 160px;
-            }
-            .hero-image-wrapper:first-child {
-                margin-right: -26px;
-            }
-            .hero-image-wrapper:last-child {
-                margin-top: 10px;
-                margin-left: -26px;
-            }
+.hero-images {
+    min-height: 170px;
+}
+.hero-image-wrapper {
+    width: 48vw;
+    max-width: 200px;
+}
+.hero-image-wrapper:first-child {
+    margin-right: -30px;
+}
+.hero-image-wrapper:last-child {
+    margin-left: -30px;
+    transform: rotate(4deg) translateX(-10px) translateY(14px);
+}
             .hero-title {
                 font-size: clamp(1.5rem, 10vw, 2rem);
             }
@@ -3464,11 +3464,11 @@
                 </svg>
             </button>
             <ul>
-                <li><a href="#about">миссия и ценности</a></li>
+                <li><a href="#about">о нас</a></li>
                 <li><a href="#skills">навыки</a></li>
                 <li><a href="#formats">как учим</a></li>
                 <li><a href="#reviews">отзывы</a></li>
-                <li><a href="#products">тарифы</a></li>
+                <li><a href="#products">курсы</a></li>
                 <li><a href="#team">кураторы</a></li>
             </ul>
         </div>
@@ -4057,106 +4057,106 @@
                     <div class="form-group">
                         <label>Кто вы? *</label>
                         <div class="role-selector">
-                            <label class="role-option" onclick="selectRole('parent')">
+                            <div class="role-option" onclick="selectRole('parent')">
                                 <input type="radio" name="role" value="parent" id="roleParent">
                                 <span>&#128106;&nbsp;Я родитель</span>
-                            </label>
-                            <label class="role-option" onclick="selectRole('teen')">
+                            </div>
+                            <div class="role-option" onclick="selectRole('teen')">
                                 <input type="radio" name="role" value="teen" id="roleTeen">
                                 <span>&#129489;&nbsp;Я подросток</span>
-                            </label>
+                            </div>
                         </div>
                     </div>
 
                     <!-- 2а. Имя родителя -->
-                    <div class="form-group" id="group-parent-name" style="display:none;">
-                        <label for="parent_name">Имя родителя *</label>
-                        <input type="text" id="parent_name" name="parent_name" placeholder="Введите ваше имя">
-                    </div>
+<div class="form-group" id="group-parent-name" style="display:none;">
+    <label for="parent_name">Имя родителя *</label>
+    <input type="text" id="parent_name" name="parent_name" placeholder="Введите ваше имя">
+</div>
 
-                    <!-- 2б. Имя подростка (от родителя) -->
-                    <div class="form-group" id="group-teen-name" style="display:none;">
-                        <label for="teen_name">Имя подростка *</label>
-                        <input type="text" id="teen_name" name="teen_name" placeholder="Введите имя подростка">
-                    </div>
+<!-- 2б. Имя подростка (от родителя) -->
+<div class="form-group" id="group-teen-name" style="display:none;">
+    <label for="teen_name">Имя подростка *</label>
+    <input type="text" id="teen_name" name="teen_name" placeholder="Введите имя подростка">
+</div>
 
-                    <!-- 2в. Имя (сам подросток) -->
-                    <div class="form-group" id="group-self-name" style="display:none;">
-                        <label for="self_name">Имя *</label>
-                        <input type="text" id="self_name" name="self_name" placeholder="Введите ваше имя">
-                    </div>
+<!-- 2в. Имя (сам подросток) -->
+<div class="form-group" id="group-self-name" style="display:none;">
+    <label for="self_name">Имя *</label>
+    <input type="text" id="self_name" name="self_name" placeholder="Введите ваше имя">
+</div>
 
-                    <!-- 3. Возраст подростка -->
-                    <div class="form-group" id="group-age" style="display:none;">
-                        <label for="age">Возраст подростка *</label>
-                        <select id="age" name="age">
-                            <option value="" disabled selected>Выберите возраст</option>
-                            <option value="14">14 лет</option>
-                            <option value="15">15 лет</option>
-                            <option value="16">16 лет</option>
-                            <option value="17">17 лет</option>
-                            <option value="18">18 лет</option>
-                        </select>
-                    </div>
+<!-- 3. Возраст подростка -->
+<div class="form-group" id="group-age">
+    <label for="age">Возраст подростка *</label>
+    <select id="age" name="age">
+        <option value="" disabled selected>Выберите возраст</option>
+        <option value="14">14 лет</option>
+        <option value="15">15 лет</option>
+        <option value="16">16 лет</option>
+        <option value="17">17 лет</option>
+        <option value="18">18 лет</option>
+    </select>
+</div>
 
-                    <!-- 4. Телефон -->
-                    <div class="form-group" id="group-phone" style="display:none;">
-                        <label>Телефон *</label>
-                        <div class="phone-row" id="phone-ru-mode">
-                            <button type="button" class="phone-flag-btn" id="phoneFlagBtn"
-                                    title="Нажмите, чтобы ввести номер другой страны"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
-                            <input type="tel" id="phone_local" name="phone_local" placeholder="999 000-00-00">
-                        </div>
-                        <div class="phone-row" id="phone-custom-mode" style="display:none; margin-top:0;">
-                            <input type="tel" id="phone_custom" name="phone_custom" placeholder="+__ ___ ___-__-__">
-                            <button type="button" class="phone-back-btn" id="phoneBackBtn"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
-                        </div>
-                        <input type="hidden" id="phone_final" name="phone">
-                    </div>
+<!-- 4. Телефон -->
+<div class="form-group" id="group-phone">
+    <label>Телефон *</label>
+    <div class="phone-row" id="phone-ru-mode">
+        <button type="button" class="phone-flag-btn" id="phoneFlagBtn"
+                title="Нажмите, чтобы ввести номер другой страны"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
+        <input type="tel" id="phone_local" name="phone_local" placeholder="999 000-00-00">
+    </div>
+    <div class="phone-row" id="phone-custom-mode" style="display:none; margin-top:0;">
+        <input type="tel" id="phone_custom" name="phone_custom" placeholder="+__ ___ ___-__-__">
+        <button type="button" class="phone-back-btn" id="phoneBackBtn"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
+    </div>
+    <input type="hidden" id="phone_final" name="phone">
+</div>
 
-                    <!-- 5. Email (необязательно) -->
-                    <div class="form-group" id="group-email" style="display:none;">
-                        <label for="email">Email <span class="field-optional">(необязательно)</span></label>
-                        <input type="email" id="email" name="email" placeholder="example@mail.ru">
-                    </div>
+<!-- 5. Email (необязательно) -->
+<div class="form-group" id="group-email">
+    <label for="email">Email <span class="field-optional">(необязательно)</span></label>
+    <input type="email" id="email" name="email" placeholder="example@mail.ru">
+</div>
 
-                    <!-- 6. Как с вами связаться? -->
-                    <div class="form-group" id="group-contact" style="display:none;">
-                        <label>Как с вами связаться? *</label>
-                        <div class="contact-method-group">
-                            <label class="contact-method-option" onclick="selectContact('telegram')">
-                                <input type="radio" name="contact_method" value="telegram" id="cmTelegram">
-                                <span>Telegram</span>
-                            </label>
-                            <label class="contact-method-option" onclick="selectContact('max')">
-                                <input type="radio" name="contact_method" value="max">
-                                <span>MAX</span>
-                            </label>
-                            <label class="contact-method-option" onclick="selectContact('phone')">
-                                <input type="radio" name="contact_method" value="phone">
-                                <span>Звонок по телефону</span>
-                            </label>
-                        </div>
-                        <div class="tg-input-wrapper" id="tg-username-wrapper">
-                            <span class="tg-prefix">@</span>
-                            <input type="text" id="tg_username" name="telegram"
-                                   placeholder="ваш_ник" autocomplete="off"
-                                   oninput="this.value=this.value.replace(/@/g,'')">
-                        </div>
-                    </div>
+<!-- 6. Как с вами связаться? -->
+<div class="form-group" id="group-contact">
+    <label>Как с вами связаться? *</label>
+    <div class="contact-method-group">
+        <label class="contact-method-option" onclick="selectContact('telegram')">
+            <input type="radio" name="contact_method" value="telegram" id="cmTelegram">
+            <span>Telegram</span>
+        </label>
+        <label class="contact-method-option" onclick="selectContact('max')">
+            <input type="radio" name="contact_method" value="max">
+            <span>MAX</span>
+        </label>
+        <label class="contact-method-option" onclick="selectContact('phone')">
+            <input type="radio" name="contact_method" value="phone">
+            <span>Звонок по телефону</span>
+        </label>
+    </div>
+    <div class="tg-input-wrapper" id="tg-username-wrapper">
+        <span class="tg-prefix">@</span>
+        <input type="text" id="tg_username" name="telegram"
+               placeholder="ваш_ник" autocomplete="off"
+               oninput="this.value=this.value.replace(/@/g,'')">
+    </div>
+</div>
 
-                    <!-- 7. Вопросы и пожелания -->
-                    <div class="form-group" id="group-request" style="display:none;">
-                        <label for="request">Вопросы и пожелания <span class="field-optional">(необязательно)</span></label>
-                        <small class="form-hint">Заполните, если хотите уточнить что-то заранее</small>
-                        <textarea id="request" name="request" placeholder="Ваши вопросы и пожелания..."></textarea>
-                    </div>
+<!-- 7. Вопросы и пожелания -->
+<div class="form-group" id="group-request">
+    <label for="request">Вопросы и пожелания <span class="field-optional">(необязательно)</span></label>
+    <small class="form-hint">Заполните, если хотите уточнить что-то заранее</small>
+    <textarea id="request" name="request" placeholder="Ваши вопросы и пожелания..."></textarea>
+</div>
 
-                    <!-- Кнопка + юридический текст -->
-                    <div id="form-footer" style="display:none;">
-                        <button type="submit" class="btn-submit">Отправить заявку</button>
-                        <p class="form-legal">Отправляя заявку или оплачивая, вы соглашаетесь с <a href="https://disk.yandex.ru/i/4FgI2LT1dNtdxg" target="_blank" rel="noopener">публичной офертой</a> и даёте согласие на обработку персональных данных (п.&nbsp;7 оферты).</p>
-                    </div>
+<!-- Кнопка + юридический текст -->
+<div id="form-footer">
+    <button type="submit" class="btn-submit">Отправить заявку</button>
+    <p class="form-legal">Отправляя заявку или оплачивая, вы соглашаетесь с <a href="https://disk.yandex.ru/i/4FgI2LT1dNtdxg" target="_blank" rel="noopener">публичной офертой</a> и даёте согласие на обработку персональных данных (п.&nbsp;7 оферты).</p>
+</div>
 
                 </form>
             </div>
@@ -4185,7 +4185,7 @@
                     Telegram
                 </a>
                 <!-- MAX -->
-                <a href="https://vk.me/+79309937335" target="_blank" rel="noopener" class="footer-contact-link">
+                <a href="https://max.ru/u/f9LHodD0cOK_582MpA32wkINKH4UrKm1fnUr8E48BbLM7GGbeltmAT9BKKw" target="_blank" rel="noopener" class="footer-contact-link">
                     <img src="images/max logo.png" alt="MAX мессенджер — связаться с онлайн-лабораторией навыков будущего" width="24" height="24" style="border-radius:6px; object-fit:contain;">
                     MAX
                 </a>
@@ -4234,31 +4234,19 @@
 
         // --- Выбор роли в форме ---
         function selectRole(role) {
-            var isParent = role === 'parent';
+    var isParent = role === 'parent';
 
-            // Отмечаем radio вручную (на iOS change может не сработать)
-            document.getElementById('roleParent').checked = isParent;
-            document.getElementById('roleTeen').checked   = !isParent;
+    document.getElementById('roleParent').checked = isParent;
+    document.getElementById('roleTeen').checked   = !isParent;
 
-            function show(id, visible) {
-                var el = document.getElementById(id);
-                if (el) el.style.display = visible ? 'flex' : 'none';
-            }
+    document.getElementById('group-parent-name').style.display = isParent ? 'flex' : 'none';
+    document.getElementById('group-teen-name').style.display   = isParent ? 'flex' : 'none';
+    document.getElementById('group-self-name').style.display   = !isParent ? 'flex' : 'none';
 
-            show('group-parent-name', isParent);
-            show('group-teen-name',   isParent);
-            show('group-self-name',   !isParent);
-
-            document.getElementById('parent_name').required = isParent;
-            document.getElementById('teen_name').required   = isParent;
-            document.getElementById('self_name').required   = !isParent;
-
-            ['group-age','group-phone','group-email','group-contact','group-request'].forEach(function(id) {
-                show(id, true);
-            });
-
-            document.getElementById('form-footer').style.display = 'block';
-        }
+    document.getElementById('parent_name').required = isParent;
+    document.getElementById('teen_name').required   = isParent;
+    document.getElementById('self_name').required   = !isParent;
+}
 
         // --- Выбор способа связи ---
         function selectContact(method) {
@@ -4400,18 +4388,15 @@
                     headers: { 'Content-Type': 'text/plain' },
                     body: JSON.stringify(payload)
                 }).then(function() {
-                    form.reset();
-                    ['group-parent-name','group-teen-name','group-self-name',
-                     'group-age','group-phone','group-email','group-contact','group-request'].forEach(function(id) {
-                        var el = document.getElementById(id);
-                        if (el) el.style.display = 'none';
-                    });
-                    document.getElementById('form-footer').style.display = 'none';
-                    document.getElementById('tg-username-wrapper').style.display = 'none';
-                    document.getElementById('phone-custom-mode').style.display = 'none';
-                    document.getElementById('phone-ru-mode').style.display = 'flex';
-                    document.getElementById('successModal').classList.add('active');
-                    document.body.style.overflow = 'hidden';
+    form.reset();
+    document.getElementById('group-parent-name').style.display = 'none';
+    document.getElementById('group-teen-name').style.display = 'none';
+    document.getElementById('group-self-name').style.display = 'none';
+    document.getElementById('tg-username-wrapper').style.display = 'none';
+    document.getElementById('phone-custom-mode').style.display = 'none';
+    document.getElementById('phone-ru-mode').style.display = 'flex';
+    document.getElementById('successModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
                 }).catch(function(err) {
                     console.error('Error!', err);
                     alert('Ошибка отправки. Проверьте интернет.');
