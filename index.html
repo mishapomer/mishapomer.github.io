@@ -3103,51 +3103,53 @@
                 font-size: 0.95rem;
             }
 
-            /* ── HERO IMAGES: show above text on mobile ── */
-            /* Grid order: images (-1) appears before hero-text (0) */
-            .hero-images {
-                display: flex;
-                flex-direction: row;
-                height: 170px;
-                overflow: visible;
-                order: -1;
-                margin-bottom: 0.75rem;
-                padding: 0 1rem;
-                justify-content: center;
-                gap: 0;
-            }
-            /* Override absolute positioning — make them flow in flexbox */
-            .hero-image-wrapper {
-                position: relative;
-                top: auto;
-                left: auto;
-                bottom: auto;
-                right: auto;
-                width: 44%;
-                max-width: 190px;
-                height: 100%;
-                flex-shrink: 0;
-                border-width: 3px;
-            }
-            .hero-image-wrapper:first-child {
-                transform: rotate(-4deg);
-                z-index: 1;
-                margin-right: -30px;
-            }
-            .hero-image-wrapper:last-child {
-                transform: rotate(3deg);
-                margin-top: 12px;
-                z-index: 2;
-                margin-left: -30px;
-            }
+            /* ── HERO IMAGES: big, overlapping, above text ── */
+.hero-images {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    overflow: visible;
+    order: -1;
+    margin-bottom: 1rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    min-height: 200px;
+}
+.hero-image-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: 52vw;
+    max-width: 240px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    flex-shrink: 0;
+    border-width: 3px;
+    border-radius: 18px;
+}
+.hero-image-wrapper:first-child {
+    transform: rotate(-6deg) translateX(12px);
+    z-index: 1;
+    margin-right: -36px;
+}
+.hero-image-wrapper:last-child {
+    transform: rotate(4deg) translateX(-12px) translateY(18px);
+    z-index: 2;
+    margin-left: -36px;
+}
 
-            /* Prevent hero overflow from clipping images */
-            .hero {
-                overflow: visible;
-            }
-            .hero-content {
-                overflow: visible;
-            }
+/* Prevent hero from clipping photos */
+.hero {
+    overflow: visible;
+}
+.hero-content {
+    overflow: visible;
+}
 
             /* ── SKILLS MARQUEE: smaller tags so all skills are visible ── */
             .skill-tag {
@@ -3351,22 +3353,20 @@
                 padding-top: 105px;
             }
             /* Slightly smaller image block on tiny screens */
-            .hero-images {
-                height: 135px;
-                margin-bottom: 0.5rem;
-                padding: 0 0.5rem;
-            }
-            .hero-image-wrapper {
-                width: 42%;
-                max-width: 160px;
-            }
-            .hero-image-wrapper:first-child {
-                margin-right: -26px;
-            }
-            .hero-image-wrapper:last-child {
-                margin-top: 10px;
-                margin-left: -26px;
-            }
+.hero-images {
+    min-height: 170px;
+}
+.hero-image-wrapper {
+    width: 48vw;
+    max-width: 200px;
+}
+.hero-image-wrapper:first-child {
+    margin-right: -30px;
+}
+.hero-image-wrapper:last-child {
+    margin-left: -30px;
+    transform: rotate(4deg) translateX(-10px) translateY(14px);
+}
             .hero-title {
                 font-size: clamp(1.5rem, 10vw, 2rem);
             }
@@ -4057,14 +4057,14 @@
                     <div class="form-group">
                         <label>Кто вы? *</label>
                         <div class="role-selector">
-                            <label class="role-option" onclick="selectRole('parent')">
+                            <div class="role-option" onclick="selectRole('parent')">
                                 <input type="radio" name="role" value="parent" id="roleParent">
                                 <span>&#128106;&nbsp;Я родитель</span>
-                            </label>
-                            <label class="role-option" onclick="selectRole('teen')">
+                            </div>
+                            <div class="role-option" onclick="selectRole('teen')">
                                 <input type="radio" name="role" value="teen" id="roleTeen">
                                 <span>&#129489;&nbsp;Я подросток</span>
-                            </label>
+                            </div>
                         </div>
                     </div>
 
@@ -4185,7 +4185,7 @@
                     Telegram
                 </a>
                 <!-- MAX -->
-                <a href="https://vk.me/+79309937335" target="_blank" rel="noopener" class="footer-contact-link">
+                <a href="https://max.ru/u/f9LHodD0cOK_582MpA32wkINKH4UrKm1fnUr8E48BbLM7GGbeltmAT9BKKw" target="_blank" rel="noopener" class="footer-contact-link">
                     <img src="images/max logo.png" alt="MAX мессенджер — связаться с онлайн-лабораторией навыков будущего" width="24" height="24" style="border-radius:6px; object-fit:contain;">
                     MAX
                 </a>
