@@ -1,20 +1,14 @@
-# robots.txt — Навыки Будущего
-# https://navyki-budushchego.ru/
-
 User-agent: *
 Allow: /
 Disallow: /404.html
 
-# Яндекс
 User-agent: Yandex
 Allow: /
 Crawl-delay: 1
 
-# Google
 User-agent: Googlebot
 Allow: /
 
-# Sitemap
-Sitemap: https://navyki-budushchego.ru/sitemap.xml
+Sitemap: https://navikibuduschego.ru/sitemap.xml
 
-Host: https://navyki-budushchego.ru
+Host: https://navikibuduschego.ru
