@@ -3464,11 +3464,11 @@
                 </svg>
             </button>
             <ul>
-                <li><a href="#about">миссия и ценности</a></li>
+                <li><a href="#about">о нас</a></li>
                 <li><a href="#skills">навыки</a></li>
                 <li><a href="#formats">как учим</a></li>
                 <li><a href="#reviews">отзывы</a></li>
-                <li><a href="#products">тарифы</a></li>
+                <li><a href="#products">курсы</a></li>
                 <li><a href="#team">кураторы</a></li>
             </ul>
         </div>
@@ -4069,94 +4069,94 @@
                     </div>
 
                     <!-- 2а. Имя родителя -->
-                    <div class="form-group" id="group-parent-name" style="display:none;">
-                        <label for="parent_name">Имя родителя *</label>
-                        <input type="text" id="parent_name" name="parent_name" placeholder="Введите ваше имя">
-                    </div>
+<div class="form-group" id="group-parent-name" style="display:none;">
+    <label for="parent_name">Имя родителя *</label>
+    <input type="text" id="parent_name" name="parent_name" placeholder="Введите ваше имя">
+</div>
 
-                    <!-- 2б. Имя подростка (от родителя) -->
-                    <div class="form-group" id="group-teen-name" style="display:none;">
-                        <label for="teen_name">Имя подростка *</label>
-                        <input type="text" id="teen_name" name="teen_name" placeholder="Введите имя подростка">
-                    </div>
+<!-- 2б. Имя подростка (от родителя) -->
+<div class="form-group" id="group-teen-name" style="display:none;">
+    <label for="teen_name">Имя подростка *</label>
+    <input type="text" id="teen_name" name="teen_name" placeholder="Введите имя подростка">
+</div>
 
-                    <!-- 2в. Имя (сам подросток) -->
-                    <div class="form-group" id="group-self-name" style="display:none;">
-                        <label for="self_name">Имя *</label>
-                        <input type="text" id="self_name" name="self_name" placeholder="Введите ваше имя">
-                    </div>
+<!-- 2в. Имя (сам подросток) -->
+<div class="form-group" id="group-self-name" style="display:none;">
+    <label for="self_name">Имя *</label>
+    <input type="text" id="self_name" name="self_name" placeholder="Введите ваше имя">
+</div>
 
-                    <!-- 3. Возраст подростка -->
-                    <div class="form-group" id="group-age" style="display:none;">
-                        <label for="age">Возраст подростка *</label>
-                        <select id="age" name="age">
-                            <option value="" disabled selected>Выберите возраст</option>
-                            <option value="14">14 лет</option>
-                            <option value="15">15 лет</option>
-                            <option value="16">16 лет</option>
-                            <option value="17">17 лет</option>
-                            <option value="18">18 лет</option>
-                        </select>
-                    </div>
+<!-- 3. Возраст подростка -->
+<div class="form-group" id="group-age">
+    <label for="age">Возраст подростка *</label>
+    <select id="age" name="age">
+        <option value="" disabled selected>Выберите возраст</option>
+        <option value="14">14 лет</option>
+        <option value="15">15 лет</option>
+        <option value="16">16 лет</option>
+        <option value="17">17 лет</option>
+        <option value="18">18 лет</option>
+    </select>
+</div>
 
-                    <!-- 4. Телефон -->
-                    <div class="form-group" id="group-phone" style="display:none;">
-                        <label>Телефон *</label>
-                        <div class="phone-row" id="phone-ru-mode">
-                            <button type="button" class="phone-flag-btn" id="phoneFlagBtn"
-                                    title="Нажмите, чтобы ввести номер другой страны"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
-                            <input type="tel" id="phone_local" name="phone_local" placeholder="999 000-00-00">
-                        </div>
-                        <div class="phone-row" id="phone-custom-mode" style="display:none; margin-top:0;">
-                            <input type="tel" id="phone_custom" name="phone_custom" placeholder="+__ ___ ___-__-__">
-                            <button type="button" class="phone-back-btn" id="phoneBackBtn"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
-                        </div>
-                        <input type="hidden" id="phone_final" name="phone">
-                    </div>
+<!-- 4. Телефон -->
+<div class="form-group" id="group-phone">
+    <label>Телефон *</label>
+    <div class="phone-row" id="phone-ru-mode">
+        <button type="button" class="phone-flag-btn" id="phoneFlagBtn"
+                title="Нажмите, чтобы ввести номер другой страны"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
+        <input type="tel" id="phone_local" name="phone_local" placeholder="999 000-00-00">
+    </div>
+    <div class="phone-row" id="phone-custom-mode" style="display:none; margin-top:0;">
+        <input type="tel" id="phone_custom" name="phone_custom" placeholder="+__ ___ ___-__-__">
+        <button type="button" class="phone-back-btn" id="phoneBackBtn"><svg width="20" height="14" viewBox="0 0 20 14" style="border-radius:2px;vertical-align:middle;margin-right:4px;" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="14" fill="#fff"/><rect y="4.67" width="20" height="4.67" fill="#0039A6"/><rect y="9.33" width="20" height="4.67" fill="#D52B1E"/></svg>+7</button>
+    </div>
+    <input type="hidden" id="phone_final" name="phone">
+</div>
 
-                    <!-- 5. Email (необязательно) -->
-                    <div class="form-group" id="group-email" style="display:none;">
-                        <label for="email">Email <span class="field-optional">(необязательно)</span></label>
-                        <input type="email" id="email" name="email" placeholder="example@mail.ru">
-                    </div>
+<!-- 5. Email (необязательно) -->
+<div class="form-group" id="group-email">
+    <label for="email">Email <span class="field-optional">(необязательно)</span></label>
+    <input type="email" id="email" name="email" placeholder="example@mail.ru">
+</div>
 
-                    <!-- 6. Как с вами связаться? -->
-                    <div class="form-group" id="group-contact" style="display:none;">
-                        <label>Как с вами связаться? *</label>
-                        <div class="contact-method-group">
-                            <label class="contact-method-option" onclick="selectContact('telegram')">
-                                <input type="radio" name="contact_method" value="telegram" id="cmTelegram">
-                                <span>Telegram</span>
-                            </label>
-                            <label class="contact-method-option" onclick="selectContact('max')">
-                                <input type="radio" name="contact_method" value="max">
-                                <span>MAX</span>
-                            </label>
-                            <label class="contact-method-option" onclick="selectContact('phone')">
-                                <input type="radio" name="contact_method" value="phone">
-                                <span>Звонок по телефону</span>
-                            </label>
-                        </div>
-                        <div class="tg-input-wrapper" id="tg-username-wrapper">
-                            <span class="tg-prefix">@</span>
-                            <input type="text" id="tg_username" name="telegram"
-                                   placeholder="ваш_ник" autocomplete="off"
-                                   oninput="this.value=this.value.replace(/@/g,'')">
-                        </div>
-                    </div>
+<!-- 6. Как с вами связаться? -->
+<div class="form-group" id="group-contact">
+    <label>Как с вами связаться? *</label>
+    <div class="contact-method-group">
+        <label class="contact-method-option" onclick="selectContact('telegram')">
+            <input type="radio" name="contact_method" value="telegram" id="cmTelegram">
+            <span>Telegram</span>
+        </label>
+        <label class="contact-method-option" onclick="selectContact('max')">
+            <input type="radio" name="contact_method" value="max">
+            <span>MAX</span>
+        </label>
+        <label class="contact-method-option" onclick="selectContact('phone')">
+            <input type="radio" name="contact_method" value="phone">
+            <span>Звонок по телефону</span>
+        </label>
+    </div>
+    <div class="tg-input-wrapper" id="tg-username-wrapper">
+        <span class="tg-prefix">@</span>
+        <input type="text" id="tg_username" name="telegram"
+               placeholder="ваш_ник" autocomplete="off"
+               oninput="this.value=this.value.replace(/@/g,'')">
+    </div>
+</div>
 
-                    <!-- 7. Вопросы и пожелания -->
-                    <div class="form-group" id="group-request" style="display:none;">
-                        <label for="request">Вопросы и пожелания <span class="field-optional">(необязательно)</span></label>
-                        <small class="form-hint">Заполните, если хотите уточнить что-то заранее</small>
-                        <textarea id="request" name="request" placeholder="Ваши вопросы и пожелания..."></textarea>
-                    </div>
+<!-- 7. Вопросы и пожелания -->
+<div class="form-group" id="group-request">
+    <label for="request">Вопросы и пожелания <span class="field-optional">(необязательно)</span></label>
+    <small class="form-hint">Заполните, если хотите уточнить что-то заранее</small>
+    <textarea id="request" name="request" placeholder="Ваши вопросы и пожелания..."></textarea>
+</div>
 
-                    <!-- Кнопка + юридический текст -->
-                    <div id="form-footer" style="display:none;">
-                        <button type="submit" class="btn-submit">Отправить заявку</button>
-                        <p class="form-legal">Отправляя заявку или оплачивая, вы соглашаетесь с <a href="https://disk.yandex.ru/i/4FgI2LT1dNtdxg" target="_blank" rel="noopener">публичной офертой</a> и даёте согласие на обработку персональных данных (п.&nbsp;7 оферты).</p>
-                    </div>
+<!-- Кнопка + юридический текст -->
+<div id="form-footer">
+    <button type="submit" class="btn-submit">Отправить заявку</button>
+    <p class="form-legal">Отправляя заявку или оплачивая, вы соглашаетесь с <a href="https://disk.yandex.ru/i/4FgI2LT1dNtdxg" target="_blank" rel="noopener">публичной офертой</a> и даёте согласие на обработку персональных данных (п.&nbsp;7 оферты).</p>
+</div>
 
                 </form>
             </div>
@@ -4234,31 +4234,19 @@
 
         // --- Выбор роли в форме ---
         function selectRole(role) {
-            var isParent = role === 'parent';
+    var isParent = role === 'parent';
 
-            // Отмечаем radio вручную (на iOS change может не сработать)
-            document.getElementById('roleParent').checked = isParent;
-            document.getElementById('roleTeen').checked   = !isParent;
+    document.getElementById('roleParent').checked = isParent;
+    document.getElementById('roleTeen').checked   = !isParent;
 
-            function show(id, visible) {
-                var el = document.getElementById(id);
-                if (el) el.style.display = visible ? 'flex' : 'none';
-            }
+    document.getElementById('group-parent-name').style.display = isParent ? 'flex' : 'none';
+    document.getElementById('group-teen-name').style.display   = isParent ? 'flex' : 'none';
+    document.getElementById('group-self-name').style.display   = !isParent ? 'flex' : 'none';
 
-            show('group-parent-name', isParent);
-            show('group-teen-name',   isParent);
-            show('group-self-name',   !isParent);
-
-            document.getElementById('parent_name').required = isParent;
-            document.getElementById('teen_name').required   = isParent;
-            document.getElementById('self_name').required   = !isParent;
-
-            ['group-age','group-phone','group-email','group-contact','group-request'].forEach(function(id) {
-                show(id, true);
-            });
-
-            document.getElementById('form-footer').style.display = 'block';
-        }
+    document.getElementById('parent_name').required = isParent;
+    document.getElementById('teen_name').required   = isParent;
+    document.getElementById('self_name').required   = !isParent;
+}
 
         // --- Выбор способа связи ---
         function selectContact(method) {
@@ -4400,18 +4388,15 @@
                     headers: { 'Content-Type': 'text/plain' },
                     body: JSON.stringify(payload)
                 }).then(function() {
-                    form.reset();
-                    ['group-parent-name','group-teen-name','group-self-name',
-                     'group-age','group-phone','group-email','group-contact','group-request'].forEach(function(id) {
-                        var el = document.getElementById(id);
-                        if (el) el.style.display = 'none';
-                    });
-                    document.getElementById('form-footer').style.display = 'none';
-                    document.getElementById('tg-username-wrapper').style.display = 'none';
-                    document.getElementById('phone-custom-mode').style.display = 'none';
-                    document.getElementById('phone-ru-mode').style.display = 'flex';
-                    document.getElementById('successModal').classList.add('active');
-                    document.body.style.overflow = 'hidden';
+    form.reset();
+    document.getElementById('group-parent-name').style.display = 'none';
+    document.getElementById('group-teen-name').style.display = 'none';
+    document.getElementById('group-self-name').style.display = 'none';
+    document.getElementById('tg-username-wrapper').style.display = 'none';
+    document.getElementById('phone-custom-mode').style.display = 'none';
+    document.getElementById('phone-ru-mode').style.display = 'flex';
+    document.getElementById('successModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
                 }).catch(function(err) {
                     console.error('Error!', err);
                     alert('Ошибка отправки. Проверьте интернет.');
